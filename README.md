@@ -30,7 +30,7 @@ The system is designed with two main pipelines:
 - Minikube & Kubectl
 - Docker
 
-### 1. Environment Setup
+### 1. Execution of the Program
 ```bash
 ### 1. Enviromental Setup
 minikube start --driver=docker
