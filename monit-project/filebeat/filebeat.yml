@@ -1,0 +1,11 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/host/secure # Ruta interna dentro del contenedor
+  tags: ["ssh-auth"]
+
+output.elasticsearch:
+  hosts: ["elasticsearch:9200"]
+
+logging.level: info

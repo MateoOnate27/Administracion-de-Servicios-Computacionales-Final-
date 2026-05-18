@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 15s # Tiempo estándar de recolección
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'fedora-server'
+    static_configs:
+      - targets: ['node-exporter:9100'] # Apunta al contenedor que medirá tu CPU/RAM
